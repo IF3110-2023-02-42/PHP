@@ -1,0 +1,315 @@
+header {
+  background-color: #4d2c5b;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 25px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.filterBox {
+  position: fixed;
+  top: 80px;
+  background-color: #4d2c5b;
+  padding: 10px;
+  left: 30px;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.filterBox .filter-filter,
+.filterBox .filter-search,
+.filterBox .filter-order {
+  background-color: white;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+.filterBox a {
+  font-weight: 500;
+  font-size: 14px;
+  text-decoration: underline;
+}
+
+.filter .filterListCt {
+  display: flex;
+  flex-direction: column;
+}
+
+.filter-inputCt {
+  display: flex;
+  flex-direction: column;
+}
+
+.filter-inputCt label {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.filter-option {
+  font-size: 12px;
+}
+
+.navPopup {
+  width: 300px;
+  position: fixed;
+  top: 100px;
+  right: 20px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-items: center;
+  z-index: 9;
+}
+
+.navPopup .profileCt {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.profileCt img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profileCt .nameCt {
+  display: flex;
+  flex-direction: column;
+  max-width: 200px;
+}
+
+.nameCt a {
+  font-weight: 500;
+  color: #4d2c5b;
+}
+
+.nameCt .role {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.navPopup .divider {
+  width: 100%;
+  height: 1px;
+  background-color: #000;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.navPopup .routeCt {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  gap: 30px;
+  width: 100%;
+}
+
+.routeCt .navbarRoute,
+.routeCt .userRoute {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 5px;
+}
+
+.navbarRoute a,
+.userRoute a {
+  color: #4d2c5b;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 14px;
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}
+
+.navbarRoute a:hover,
+.userRoute a:hover {
+  color: #000;
+}
+
+.logoutButton {
+  width: 90px;
+  border-style: none;
+  background-color: #4d2c5b;
+  padding: 5px 10px;
+  border-radius: 16px;
+  color: white;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  margin-top: 10px;
+  cursor: pointer;
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}
+
+.loginButton {
+  border-style: solid;
+  background-color: #4d2c5b;
+  border-color: #fff;
+  padding: 5px 20px;
+  border-radius: 16px;
+  color: white;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}
+
+.loginButton:active,
+.logoutButton:active {
+  scale: 95%;
+}
+
+.searchBox {
+  max-width: 500px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-items: center;
+  font-family: "Poppins", sans-serif;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 12px;
+  height: fit-content;
+  padding: 10px;
+}
+
+.searchBox input {
+  width: 400px;
+  display: none;
+  padding: 5px;
+  border-radius: 12px;
+  color: #fff;
+  border-style: none;
+  outline: none;
+  font-size: 12px;
+  font-family: "Poppins", sans-serif;
+  background-color: #4d2c5e;
+}
+
+.searchButton {
+  width: fit-content;
+  height: fit-content;
+  background-color: transparent;
+  border-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.searchFilter {
+  display: none;
+  width: fit-content;
+  height: fit-content;
+  background-color: transparent;
+  border-style: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.searchButton img {
+  width: 18px;
+  height: auto;
+}
+
+.searchFilter img {
+  width: 20px;
+  height: auto;
+}
+
+.features {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  overflow: hidden;
+  gap: 50px;
+}
+
+.features .routeList {
+  display: none;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.features a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}
+
+.features a:hover {
+  color: #fff7b4;
+}
+
+.profileButton {
+  width: 50px;
+  height: 50px;
+  min-width: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  box-shadow: none;
+  border-style: none;
+}
+
+.profileButton img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+@media (min-width: 1024px) {
+  .features .routeList {
+    display: flex;
+  }
+
+  .routeCt .navbarRoute {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .searchFilter {
+    display: flex;
+  }
+
+  .searchBox input {
+    display: block;
+  }
+
+  .searchBox {
+    padding: 5px 10px;
+  }
+}

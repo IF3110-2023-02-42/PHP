@@ -1,0 +1,65 @@
+/* CONTENT */
+main {
+  align-items: center;
+  padding: 1% 2.5% 5% 2.5%;
+  min-height: calc(100vh - 300px);
+}
+
+.pageLabel {
+  color: #4d2c5e;
+}
+
+#studyHistoryCt {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.studyHistory {
+  background-color: white;
+  display: block;
+  display: flex;
+  border-radius: 15px;
+  flex-direction: row;
+  color: #4d2c5e;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  transition-property: all;
+  transition-duration: 0.1s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}
+
+.studyHistory:hover {
+  scale: 101%;
+}
+
+.studyHistory:active {
+  background-color: rgb(229, 235, 240);
+}
+
+.studyHistory img {
+  width: 20%;
+  max-width: 138px;
+  max-height: 126px;
+  padding: 3%;
+}
+
+.studyHistory p {
+  text-align: justify;
+}
+
+.content {
+  padding-right: 30px;
+}
+
+.studyHistory-link {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  cursor: pointer;
+}

@@ -1,0 +1,14 @@
+{
+    "name": "bram0/php-basic-mvc",
+    "authors": [
+        {
+            "name": "Jose Abraham Castillo",
+            "email": "crjoseabraham@gmail.com"
+        }
+    ],
+	"autoload": {
+		"files": ["app/constants/base.php", "app/constants/response.php", "app/applications/response.php"],
+		"classmap": ["app/"]
+	},
+    "require": {}
+}

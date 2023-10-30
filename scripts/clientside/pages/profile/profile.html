@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <title>Profile</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Jost:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Montserrat:wght@300;400;500;700&family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Jost:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Montserrat:wght@300;400;500;700&family=Open+Sans:wght@300&family=Poppins:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./profile.css" />
+    <link rel="stylesheet" href="../../style.css" />
+
+    <script src="../../components/navbar/navbar.js"></script>
+    <link rel="stylesheet" href="../../components/navbar/navbar.css" />
+
+    <script src="../../components/footer/footer.js"></script>
+    <link rel="stylesheet" href="../../components/footer/footer.css" />
+
+    <script src="../../utils/auth.js"></script>
+
+    <script src="../../components/alertNotification/alertNotification.js"></script>
+    <link
+      rel="stylesheet"
+      href="../../components/alertNotification/alertNotification.css"
+    />
+  </head>
+  <body onload="loadPage()">
+    <header id="header"></header>
+
+    <main>
+      <section class="pageLabel">
+        <h2>User Profile</h2>
+      </section>
+      <section class="formContainer">
+        <div class="profileContainer">
+          <div class="profile" id="profilePicture">
+            <div class="head">
+              <h3>Profile Picture</h3>
+            </div>
+            <div class="picture">
+              <label class="button" for="profilePhotoFile">
+                <span>Choose Photo</span>
+              </label>
+              <input
+                id="profilePhotoFile"
+                type="file"
+                class="choosePhotoButton"
+                accept=".png, .jpg, .jpeg"
+              />
+              <img src="" alt="profile picture" id="profileImage" />
+            </div>
+          </div>
+          <div class="profile" id="firstName">
+            <div class="head">
+              <h3>First Name</h3>
+            </div>
+            <input
+              type="text"
+              class="profileInput"
+              placeholder="input new first name"
+              id="profileFirstName"
+              required
+            />
+          </div>
+          <div class="profile" id="lastName">
+            <div class="head">
+              <h3>Last Name</h3>
+            </div>
+            <input
+              type="text"
+              class="profileInput"
+              placeholder="input new last name"
+              id="profileLastName"
+              required
+            />
+          </div>
+          <div class="profile" id="username">
+            <div class="head">
+              <h3>Username</h3>
+            </div>
+            <input
+              type="text"
+              class="profileInput"
+              placeholder="input new username"
+              id="profileUsername"
+              required
+            />
+          </div>
+          <div class="profile" id="email">
+            <div class="head">
+              <h3>Email</h3>
+            </div>
+            <input
+              type="text"
+              class="profileInput"
+              placeholder="input new email"
+              id="profileEmail"
+              required
+            />
+          </div>
+          <div class="profile" id="password">
+            <div class="head">
+              <h3>Password</h3>
+            </div>
+            <input
+              type="password"
+              class="profileInput"
+              placeholder="input new password"
+              id="profilePassword"
+              required
+            />
+          </div>
+        </div>
+
+        <section class="saveButton">
+          <button class="button" type="submit">Save Changes</button>
+        </section>
+      </section>
+    </main>
+
+    <footer id="footer"></footer>
+  </body>
+  <script src="./profile.js"></script>
+</html>

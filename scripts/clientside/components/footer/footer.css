@@ -1,0 +1,32 @@
+/*FOOTER*/
+
+footer {
+  background-color: #4d2c5e;
+  padding: 1% 2.5%;
+  color: #fff;
+}
+
+.contacts {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.contacts img {
+  display: block;
+  height: 25px;
+  width: 25px;
+  margin-bottom: 1%;
+}
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+
+.contact p {
+  display: inline-block;
+  margin-left: 1%;
+}

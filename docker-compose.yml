@@ -1,0 +1,36 @@
+# version: '3.3'
+# services:
+#   web:
+#     image: tubes-1:latest
+#     ports:
+#       - 8008:80
+version: "3.8"
+services:
+  backend:
+    build:
+      context: ./
+      dockerfile: backend.Dockerfile
+    container_name: backend
+    volumes:
+      - ./scripts/serverside:/var/www/html/
+    ports:
+      - 8000:80
+  frontend:
+    build:
+      context: ./
+      dockerfile: frontend.Dockerfile
+    container_name: frontend
+    volumes:
+      - ./scripts/clientside:/var/www/html/
+    ports:
+      - 8080:80
+  db:
+    image: mysql:latest
+    volumes:
+      - ./db_data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: admin123
+      MYSQL_DATABASE: studydojo
+    container_name: database
+    ports:
+      - 3306:3306

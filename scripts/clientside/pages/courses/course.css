@@ -1,0 +1,40 @@
+/* CONTENT */
+main{
+    align-items: center;
+    padding: 1% 2.5% 5% 2.5%;
+}
+
+.pageLabel{
+    color: #4D2C5E;
+}
+
+.course .content{
+    width: 80%;
+    background-color: white;
+    display: block;
+    display: flex;
+    margin-left: 10%;
+    margin-bottom: 3%;
+    border-radius: 15px;
+    flex-direction: row;
+    color: #4D2C5E;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.course .content:hover{
+    background-color: #d4d0d0;
+    cursor: pointer;
+}
+
+.course .content img{
+    width: 20%;
+    max-width: 138px;
+    max-height: 126px;
+    padding: 3%;
+    border-radius: 50%;
+}
+
+.course-link {
+    text-decoration: none;
+    cursor: pointer;
+}

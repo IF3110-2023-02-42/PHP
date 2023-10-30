@@ -1,0 +1,52 @@
+main {
+  padding: 1% 2.5% 5% 2.5%;
+}
+
+.pageLabel {
+  color: #4d2c5e;
+}
+
+.aboutUsContainer {
+  background-color: #fff;
+  margin: 3% 0%;
+  padding: 3% 5% 3%;
+  border-radius: 12px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* Add shadow */
+  color: #4d2c5e;
+}
+
+.aboutUsImage {
+  margin-bottom: 5%;
+  display: flex;
+  justify-content: center;
+}
+
+.developers {
+  padding: 20px;
+  text-align: center;
+}
+
+.developerContainer {
+  width: 100%;
+}
+
+.developer {
+  text-align: center;
+  margin: 20px;
+  display: inline-block;
+  background-color: #fdf8ee;
+  padding: 2%;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* Add shadow */
+}
+
+.developer:hover {
+  scale: 105%;
+}
+
+.developer img {
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+}

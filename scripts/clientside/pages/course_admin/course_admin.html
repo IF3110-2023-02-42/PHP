@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Course Admin</title>
+    <link rel="stylesheet" href="./course_admin.css" />
+    <link rel="stylesheet" href="../../style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Jost:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Montserrat:wght@300;400;500;700&family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Jost:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Montserrat:wght@300;400;500;700&family=Open+Sans:wght@300&family=Poppins:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="../../components/navbar/navbar.js"></script>
+    <link rel="stylesheet" href="../../components/navbar/navbar.css" />
+
+    <script src="../../components/footer/footer.js"></script>
+    <link rel="stylesheet" href="../../components/footer/footer.css" />
+
+    <script src="../../utils/auth.js"></script>
+
+    <script src="../../components/alertNotification/alertNotification.js"></script>
+    <link
+      rel="stylesheet"
+      href="../../components/alertNotification/alertNotification.css"
+    />
+  </head>
+  <body onload="loadPage()">
+    <header id="header"></header>
+    <main>
+      <div class="course">
+        <section class="pageLabel">
+          <h2>Course Admin</h2>
+        </section>
+      </div>
+        
+        <div class="addCourse">
+        <button id="addCourseButton" class="button">
+          <h3>Add course</h3>
+        </button>
+        <div class="addCourseForm">
+          <div class="addCourseData" id="courseCode">
+            <div class="head">
+              <h4>No course</h4>
+            </div>
+            <input
+              type="text"
+              class="courseInput"
+              placeholder=""
+              id="courseCode"
+            />
+          </div>
+          <div class="addCourseData" id="courseClass">
+            <div class="head">
+              <h4>Kelas</h4>
+            </div>
+            <input
+              type="text"
+              class="courseInput"
+              placeholder=""
+              id="courseClass"
+            />
+          </div>
+          <div class="addCourseData" id="courseTitle">
+            <div class="head">
+              <h4>Judul</h4>
+            </div>
+            <input
+              type="text"
+              class="courseInput"
+              placeholder=""
+              id="courseTitle"
+            />
+          </div>
+          <div class="addCourseData" id="deskripsi">
+            <div class="head">
+              <h4>Deskripsi</h4>
+            </div>
+            <input
+              type="text"
+              class="courseInput"
+              placeholder=""
+              id="courseDescription"
+            />
+          </div>
+          <div class="saveButton">
+            <button class="button" type="submit">Save New Course</button>
+          </div>
+        </div>
+        </div>
+    </main>
+        
+        <footer id="footer"></footer>
+    </body>
+    <script src="./course_admin.js"></script>
+</html>

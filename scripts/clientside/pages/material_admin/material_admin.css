@@ -1,0 +1,294 @@
+/* CONTENT */
+main{
+    align-items: center;
+    padding: 1% 2.5% 5% 2.5%;
+}
+
+main button{
+    background-color: #4D2C5E;
+    padding: 0% 3%;
+    margin: 0% 0% 3%;
+    border-radius: 15px;
+    border: none;
+    flex-direction: row;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+main button:hover{
+    scale: 110%;
+}
+
+main button:active{
+    background-color: #2f133c;
+}
+
+.addMaterial{
+    text-align: center;
+}
+
+h3{
+    color: white;
+}
+
+.pageLabel{
+    color: #4D2C5E;
+}
+
+.material .content{
+    width: 90%;
+    background-color: white;
+    border-radius: 15px;
+    padding: 0% 2.5%;
+    margin: 0% 0% 3%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: #4D2C5E;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+
+.material button{
+    background-color: #4D2C5E;
+    margin: 0% 5% 0%;
+    padding: 0% 5% 0%;
+    border-radius: 15px;
+    width: 80px;
+    height: fit-content;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.material button:hover{
+    scale: 110%;
+}
+
+.material button:active{
+    background-color: #2f133c;
+}
+
+.material h3{
+    color: white;
+}
+
+
+.contentText{
+    float: 1;
+}
+
+
+.material .adminButtons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    float: right;
+}
+
+#delete{
+    background-color: red;
+    margin-left: auto;
+    /* width: 100px; */
+    justify-content: center;
+}
+
+.editVideoTitle h3, .editTextTitle h3, .editExerciseTitle h3, .exerciseTitle h3{
+    color: #4D2C5E;
+}
+label {
+    background-color: #4D2C5E;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    align-items: center;
+}
+
+label:hover{
+    scale: 105%;
+}
+
+
+#videoInput{
+    display: none;
+}
+
+
+
+.editMaterialForm{
+    width: 55%;
+    margin: auto;
+    margin-bottom: 5%;
+    border-radius: 20px;
+    color: #4D2C5E;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* Add shadow */ 
+    flex-direction: column;
+    background-color: #fff;
+    padding: 5px 15px;
+}
+
+.editVideo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.video{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.editVideo video{
+    width: 50%;
+    border-radius: 20px;
+    margin-bottom: 0.3%;
+}
+
+.videoModification{
+    width: 43%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.editVideo .editVideoButtons{
+    display: flex;
+    flex-direction: row;  
+    justify-content: space-between;
+}
+
+.editVideoButtons button{
+    background-color: #4D2C5E;
+    margin: 0% 5% 0% 0%;
+    padding: 0% 5% 0%;
+    border-radius: 15px;
+    width: 80px;
+    height: fit-content;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+
+#saveChangeButton{
+    display: flex;
+    justify-content: center;
+}
+#saveChangeButton button{
+    padding: 0%;
+    width: 200px;
+}
+.saveChangeButton p{
+    color: #fff;
+}
+
+
+textarea{
+    width: 95%;
+    height: 300px;
+    border-radius: 20px;
+    border-style:solid ;
+    border-width: 3px ;
+    vertical-align: top; /* Set vertical alignment to top */
+    direction: ltr; /* Set text direction to left-to-right */
+
+    resize: none;
+}
+
+
+
+.exercise{
+    width: 90%;
+    background-color: white;
+    border-radius: 15px;
+    padding: 0% 2.5%;  
+    margin: 0% 0% 3%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #4D2C5E;
+    /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
+}
+
+.exercise img{
+    width: 20%;
+    max-width: 138px;
+    max-height: 126px;
+    padding: 3%;
+}
+
+.exercise:active{
+    background-color: rgb(229, 235, 240);
+}
+
+.exercise-link {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.exercise .exerciseButtons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Add this line */
+    /* width: 100%; */
+}
+
+.exerciseButtons button{
+    background-color: #4D2C5E;
+    margin: 0% 5% 0% 0%;
+    padding: 0% 5% 0%;
+    border-radius: 15px;
+    width: 80px;
+    height: fit-content;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+/* Add Material*/
+
+.addMaterialForm{
+    display: none;
+    padding: 2% 5% .1%;
+    border-radius: 20px;
+    color: #4D2C5E;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* Add shadow */ 
+    flex-direction: column;
+    background-color: #fff;
+    width: 80%;
+    margin: auto;
+}
+
+.addMaterialData{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 2%;
+}
+
+.addMaterialData input{
+    padding: 10px;
+    border-radius: 12px;
+    border-color: #c3c3c3;
+    border-style: solid;
+    outline: none;
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    width: 80%;
+}
+
+.addMaterialForm button{
+    background-color: #4D2C5E;
+    color: #fff;
+    margin-top: 3%;
+    padding: 5px 15px;
+    border-radius: 12px;
+    border-color: #4D2C5E;
+    color: #fff;
+    border-style: solid;
+    outline: none;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+}

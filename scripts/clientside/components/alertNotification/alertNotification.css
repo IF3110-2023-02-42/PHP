@@ -1,0 +1,47 @@
+.alert-notification {
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  z-index: 100;
+  background-color: white;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-items: center;
+  align-items: center;
+}
+
+.alert-notification img {
+  width: 24px;
+  height: 24px;
+}
+
+.slide-in {
+  animation: slide-in 0.2s ease-out forwards;
+}
+
+.slide-out {
+  animation: slide-out 0.2s ease-out forwards;
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateY(-150%) translate(-50%, -50%);
+  }
+  100% {
+    transform: translateY(0) translate(-50%, -50%);
+  }
+}
+
+@keyframes slide-out {
+  0% {
+    transform: translateY(0) translate(-50%, -50%);
+  }
+  100% {
+    transform: translateY(-150%) translate(-50%, -50%);
+  }
+}

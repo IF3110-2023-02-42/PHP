@@ -1,0 +1,68 @@
+.paginationCt {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.paginationList {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+.paginationButton {
+  width: 30px;
+  height: 30px;
+  border-style: none;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #75667c;
+  font-family: "Poppins";
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}
+
+.paginationButton:hover {
+  scale: 105%;
+  filter: brightness(110%);
+}
+
+.navigationPaginationButton:hover {
+  scale: 120%;
+}
+
+.paginationButton:active,
+.navigationPaginationButton:active {
+  scale: 95%;
+  filter: brightness(90%);
+}
+
+.currentPage {
+  background-color: #4d2c5e;
+}
+
+.navigationPaginationButton {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-style: none;
+  background-color: transparent;
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}
+
+.navigationPaginationButton img {
+  width: 40px;
+  height: 40px;
+}

@@ -1,0 +1,183 @@
+/* CONTENT */
+main{
+    align-items: center;
+    padding: 1% 2.5% 5% 2.5%;
+}
+
+main button{
+    background-color: #4D2C5E;
+    padding: 0% 3%;
+    margin: 0% 0% 3%;
+    border-radius: 15px;
+    border: none;
+    flex-direction: row;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+main button:hover{
+    scale: 110%;
+}
+
+main button:active{
+    background-color: #2f133c;
+}
+
+.addMaterial{
+    text-align: center;
+}
+
+h3{
+    color: white;
+}
+
+.pageLabel{
+    color: #4D2C5E;
+}
+
+.material .content{
+    width: 90%;
+    background-color: white;
+    border-radius: 15px;
+    padding: 0% 2.5%;
+    margin: 0% 0% 3%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: #4D2C5E;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+
+.material button{
+    background-color: #4D2C5E;
+    margin: 0% 5% 0%;
+    padding: 0% 5% 0%;
+    border-radius: 15px;
+    width: 80px;
+    height: fit-content;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.material button:hover{
+    scale: 110%;
+}
+
+.material button:active{
+    background-color: #2f133c;
+}
+
+.material h3{
+    color: white;
+}
+
+
+.contentText{
+    float: 1;
+}
+
+
+.material .adminButtons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    float: right;
+}
+
+#delete{
+    background-color: red;
+    margin-left: auto;
+    /* width: 100px; */
+    justify-content: center;
+}
+
+.editVideoTitle h3, .editTextTitle h3, .editExerciseTitle h3, .exerciseTitle h3{
+    color: #4D2C5E;
+}
+label {
+    background-color: #4D2C5E;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    align-items: center;
+}
+
+label:hover{
+    scale: 105%;
+}
+
+
+#videoInput{
+    display: none;
+}
+
+.video{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#materialText{
+    width: 90%;
+    background-color: white;
+    border-radius: 15px;
+    padding: 0% 2.5%;  
+    margin: 0% 0% 3%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #4D2C5E;
+    /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
+}
+
+
+.exercise{
+    width: 90%;
+    background-color: white;
+    border-radius: 15px;
+    padding: 0% 2.5%;  
+    margin: 0% 0% 3%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #4D2C5E;
+    /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
+}
+
+.exercise img{
+    width: 20%;
+    max-width: 138px;
+    max-height: 126px;
+    padding: 3%;
+}
+
+.exercise:active{
+    background-color: rgb(229, 235, 240);
+}
+
+.exercise-link {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.exercise .exerciseButtons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Add this line */
+    /* width: 100%; */
+}
+
+.exerciseButtons button{
+    background-color: #4D2C5E;
+    margin: 0% 5% 0% 0%;
+    padding: 0% 5% 0%;
+    border-radius: 15px;
+    width: 80px;
+    height: fit-content;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}

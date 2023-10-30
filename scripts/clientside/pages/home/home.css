@@ -1,0 +1,133 @@
+/*MAIN*/
+
+main{
+    align-items: center;
+    padding: 1% 2.5% 5% 2.5%;
+    color: #4D2C5E;
+}
+
+.course {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+.courseContainer{
+    margin: 0% 10% 0% 0%;
+    width: 80%;
+}
+
+
+.courseContent{
+    background-color: #F8FDFF;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 2%;
+    margin-bottom: 1%;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* Add shadow */
+}
+
+.courseContent:hover{
+    background-color: #d4d0d0;
+    cursor: pointer;
+}
+
+
+.courseContent img{
+    border-radius: 10px;
+    margin-right: 3%;
+    width: 100px;
+    height: 100px;
+}
+
+main .list {
+	width: 100%;
+	max-width: 768px;
+	background-color: #FFF;
+	border: 1px solid #CCC;
+	margin-top: 25px;
+}
+
+.courseContents .course {
+	padding: 15px;
+	border-bottom: 1px solid #CCC;
+}
+.courseContents .course:last-of-type {
+	border-bottom: none;
+}
+.courseContents .course:hover {
+	background: rgba(0, 0, 0, 0.05);
+}
+
+.pagenumbers {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.pagenumbers button {
+	width: 50px;
+	height: 50px;
+
+	appearance: none;
+	border: none;
+	outline: none;
+	cursor: pointer;
+
+	background-color: #4D2C5E;
+
+	margin: 5px;
+	transition: 0.4s;
+
+	color: #FFF;
+	font-size: 18px;
+	text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+}
+
+.pagenumbers button:hover {
+	background-color: #d7a3ef;
+}
+
+.pagenumbers button.activeCourse {
+	background-color: #d7a3ef;
+	box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.2);
+}
+.pagenumbers button.activeExercise {
+	background-color: #d7a3ef;
+	box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.exercise {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.exerciseContainer{
+    margin: 0% 0% 0% 10%;
+    width: 80%;
+}
+
+.exerciseContent img{
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+    margin-right: 3%;
+}
+
+.exerciseContent{
+    background-color: #F8FDFF;
+    display: flex;
+    flex-direction: row;
+    padding: 2%;
+    margin-bottom: 1%;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* Add shadow */
+}

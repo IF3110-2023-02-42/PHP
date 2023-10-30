@@ -1,0 +1,42 @@
+/* CONTENT */
+main{
+    align-items: center;
+    padding: 1% 2.5% 5% 2.5%;
+}
+
+.pageLabel{
+    color: #4D2C5E;
+}
+
+.exercise{
+    width: 80%;
+    background-color: white;
+    display: block;
+    display: flex;
+    margin-left: 10%;
+    margin-bottom: 5%;
+    border-radius: 15px;
+    flex-direction: row;
+    color: #4D2C5E;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.exercise img{
+    width: 20%;
+    max-width: 138px;
+    max-height: 126px;
+    padding: 3%;
+}
+
+.exercise:hover{
+    scale: 110%;
+}
+
+.exercise:active{
+    background-color: rgb(229, 235, 240);
+}
+
+.exercise-link {
+    text-decoration: none;
+    cursor: pointer;
+}

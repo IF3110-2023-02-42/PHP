@@ -1,0 +1,38 @@
+/* CONTENT */
+main{
+    align-items: center;
+    padding: 1% 2.5% 5% 2.5%;
+}
+
+.pageLabel{
+    color: #4D2C5E;
+}
+
+.material .content{
+    width: 95%;
+    background-color: white;
+    border-radius: 15px;
+    padding: 0% 3%;
+    margin: 0% 0% 3%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: #4D2C5E;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.material .content:hover{
+    background-color: #d4d0d0;
+    cursor: pointer;
+}
+
+h3{
+    color: white;
+}
+
+
+.contentText{
+    float: 1;
+}
+

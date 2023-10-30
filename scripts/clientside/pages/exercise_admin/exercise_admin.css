@@ -1,0 +1,138 @@
+/* CONTENT */
+main{
+    align-items: center;
+    padding: 1% 2.5% 5% 2.5%;
+}
+
+main button{
+    background-color: #4D2C5E;
+    margin-bottom: 3%;
+    margin-right: 3%;
+    padding-right: 5%;
+    padding-left: 5%;
+    border-radius: 15px;
+    border: none;
+    flex-direction: row;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+main button:hover{
+    scale: 110%;
+}
+
+main button:active{
+    background-color: #2f133c;
+}
+
+.addQuestion{
+    text-align: center;
+}
+
+.pageLabel{
+    color: #4D2C5E;
+}
+
+.exercise .content{
+    width: 95%;
+    background-color: white;
+    border-radius: 15px;
+    padding: 0% 3%;
+    margin: 0% 0% 3%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: #4D2C5E;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+
+.exercise button{
+    background-color: #4D2C5E;
+    margin: 0% 5% 0%;
+    padding: 0% 5% 0%;
+    border-radius: 15px;
+    width: 80px;
+    height: fit-content;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.exercise button:hover{
+    scale: 110%;
+}
+
+.exercise button:active{
+    background-color: #2f133c;
+}
+
+h3{
+    color: white;
+}
+
+
+.contentText{
+    float: 1;
+}
+
+
+.exercise .adminButtons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    float: right;
+}
+
+#delete{
+    background-color: red;
+    margin-left: auto;
+    width: 100px;
+}
+
+
+.addQuestionForm{
+    /* display: none; */
+    padding: 2% 5% .1%;
+    border-radius: 20px;
+    color: #4D2C5E;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* Add shadow */ 
+    display: none;
+    flex-direction: column;
+
+    background-color: #fff;
+    width: 80%;
+    margin: auto;
+}
+
+.addQuestionData{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 2%;
+}
+
+.addQuestionData input{
+    padding: 10px;
+    border-radius: 12px;
+    border-color: #c3c3c3;
+    border-style: solid;
+    outline: none;
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    width: 80%;
+}
+
+.addQuestionForm button{
+    background-color: #4D2C5E;
+    color: #fff;
+    margin-top: 3%;
+    padding: 5px 15px;
+    border-radius: 12px;
+    border-color: #4D2C5E;
+    color: #fff;
+    border-style: solid;
+    outline: none;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+}

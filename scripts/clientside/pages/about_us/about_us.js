@@ -1,0 +1,4 @@
+function loadPage() {
+  generateNavbar();
+  generateFooter();
+}
