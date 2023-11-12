@@ -1,0 +1,1 @@
+let parentDiv = document.getElementsByClassName("bookmark")[0];
