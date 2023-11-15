@@ -9,7 +9,7 @@ class Auth extends Controller
         require_once __DIR__ . '/../applications/response.php';
         require_once __DIR__ . '/../constants/response.php';
     }
-    public function login()
+    public function logiin()
     {
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             if (isset($_SESSION["user"])) {
@@ -57,6 +57,24 @@ class Auth extends Controller
             }
         } else {
             json_response_fail(WRONG_API_CALL);
+        }
+    }
+
+    public function restauth()
+    {
+        if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+            if (!(isset($_POST['username']) && isset($_POST['password']))) {
+                json_response_fail(WRONG_API_CALL);
+                return;
+            }
+            $res = $this->model->login($_POST['username'], $_POST['password']);
+            if ($res[0]) {
+                json_response_success($res[1]);
+            } else {
+                json_response_fail($res[1]);
+            }
+        } else {
+            json_response_fail(METHOD_NOT_ALLOWED);
         }
     }
 }
