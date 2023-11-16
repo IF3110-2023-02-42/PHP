@@ -7,7 +7,7 @@ let parentDiv = document.getElementsByClassName("material")[0];
 let exerciseDiv = document.getElementsByClassName("exercisePlaceholder")[0];
 
 function loadPage() {
-  auth(["user", "admin"], `/pages/home/home.html`);
+  // auth(["user", "admin"], `/pages/home/home.html`);
   generateNavbar();
   generateFooter();
 }
@@ -50,56 +50,8 @@ function getMaterialById(ID_Material){
   xhttp.send();
 }
 
-function loadExercise(exerciseData)
-{
-  console.log("test: ");
-  console.log(exerciseData[0]);
-  exerciseDiv.insertAdjacentHTML(
-    "beforeend",
-    `
-    <div class="exercise" onclick="openMaterial()">
-                      <img 
-                      src="../../../../assets/module-profile.png" 
-                      alt="exercise profile icon"
-                      id="exercise-profile"
-                      />
-                  
-                      <div class="exerciseContent">
-                          <div class="exerciseTitle">
-                              <h3>${exerciseData[0]["judul"]}</h3>
-                          </div>
-                          <p>${exerciseData[0]["deskripsi"]}</p>
-                      </div>
-    `
-  )
-}
-
-function getExercise(ID_Material){
-  let xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function () {
-    if (this.readyState == 4 && this.status == 200) {
-      console.log(this.responseText);
-      let serverResponse = JSON.parse(this.responseText);
-      if (serverResponse["status"]) {
-        exerciseData = serverResponse["data"];
-      } else {
-        exerciseData = null;
-      }
-      loadExercise(exerciseData);
-    }
-  };
-  xhttp.open(
-    "GET",
-    "http://localhost:8000/api/exerciseapi/getexercisebymaterialid?id_material=" + ID_Material,
-    true
-  );
-  xhttp.setRequestHeader("Accept", "application/json");
-  xhttp.withCredentials = true;
-  xhttp.send();
-}
-
 function openMaterial(){
-  window.location.href= '../exercise/exercise.html?id_material='+ID_Material};
+  window.location.href= 'http://localhost:8090/exercise/'+ID_Material};
 
   /* caller */
-  window.addEventListener("load", function () {getMaterialById(ID_Material), getExercise(ID_Material)});
+  window.addEventListener("load", function () {getMaterialById(ID_Material)});
