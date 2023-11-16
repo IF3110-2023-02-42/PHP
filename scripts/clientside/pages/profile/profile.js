@@ -24,6 +24,21 @@ function loadPage() {
   getSession()
     .then((session) => {
       loadProfile(session["data"]);
+      if (session["data"]["role"] === "admin") {
+        generateStudyDojoExtended(
+          true,
+          "accepted",
+          session["data"]["ID_Pengguna"]
+        );
+      } else {
+        getVerificationStatus(session["data"]["ID_Pengguna"]).then((res) => {
+          generateStudyDojoExtended(
+            false,
+            res.data,
+            session["data"]["ID_Pengguna"]
+          );
+        });
+      }
     })
     .catch((err) => {
       console.log("err", err);
@@ -92,6 +107,114 @@ function editProfileToBackend(data) {
 function checkEmail(email) {
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   return emailRegex.test(email);
+}
+
+function generateStudyDojoExtended(isAdmin, verificationStatus, ID_Pengguna) {
+  var mainContainer = document.getElementById("discussionPageContainer");
+  let innerHTMLContainer;
+  if (isAdmin) {
+    innerHTMLContainer = `
+    <h3>Studydojo Extended!</h3>
+      <section class="saveButton">
+        <button class="button" id="openPageSPA">Open page</button>
+      </section>
+`;
+  } else if (verificationStatus !== "notfound") {
+    innerHTMLContainer =
+      `
+    <h3>Studydojo Extended!</h3>
+      <section class="saveButton">
+        <button class="button" id="openPageSPA">Open page</button>
+        <h5>Verification status : <span>` +
+      verificationStatus +
+      `</span></h5>
+      </section>
+`;
+  } else {
+    innerHTMLContainer = `
+        <h3>Studydojo Extended!</h3>
+          <section class="saveButton">
+            <button class="button"  id="openPageSPA">Open page</button>
+            <button class="button"  id="requestVerification">Request verification</button>
+            <h5>Verification status : <span>not requested</span></h5>
+          </section>
+    `;
+  }
+  mainContainer.innerHTML = innerHTMLContainer;
+  var openPageSPA = document.getElementById("openPageSPA");
+  openPageSPA.addEventListener("click", () => {
+    window.open("http://localhost:8090/", "_blank");
+  });
+  var requestVerificationComponent = document.getElementById(
+    "requestVerification"
+  );
+  requestVerificationComponent.addEventListener("click", () => {
+    requestVerification(ID_Pengguna)
+      .then((res) => {
+        alertNotification(false, res.data);
+        window.open(
+          "http://localhost:8080/pages/profile/profile.html",
+          "_blank"
+        );
+      })
+      .catch((err) => {
+        console.log("err", err);
+      });
+  });
+}
+
+function getVerificationStatus(ID_Pengguna) {
+  return new Promise((resolve, reject) => {
+    const xhttp = new XMLHttpRequest();
+
+    xhttp.onreadystatechange = function () {
+      if (this.readyState == 4) {
+        if (this.status == 200) {
+          const session = JSON.parse(this.responseText);
+          resolve(session);
+        } else {
+          reject(this.status);
+        }
+      }
+    };
+
+    xhttp.open(
+      "GET",
+      "http://localhost:8000/api/soap/checkstatus?ID_Pengguna=" + ID_Pengguna,
+      true
+    );
+    xhttp.setRequestHeader("Accept", "application/json");
+    xhttp.setRequestHeader("Content-Type", "application/json");
+    xhttp.withCredentials = true;
+    xhttp.send();
+  });
+}
+
+function requestVerification(ID_Pengguna) {
+  return new Promise((resolve, reject) => {
+    const xhttp = new XMLHttpRequest();
+
+    xhttp.onreadystatechange = function () {
+      if (this.readyState == 4) {
+        if (this.status == 200) {
+          const session = JSON.parse(this.responseText);
+          resolve(session);
+        } else {
+          reject(this.status);
+        }
+      }
+    };
+
+    const data = {
+      ID_Pengguna,
+    };
+
+    xhttp.open("POST", "http://localhost:8000/api/soap/addrequest", true);
+    xhttp.setRequestHeader("Accept", "application/json");
+    xhttp.setRequestHeader("Content-Type", "application/json");
+    xhttp.withCredentials = true;
+    xhttp.send(JSON.stringify(data));
+  });
 }
 
 inputFile.addEventListener("change", loadFile);
