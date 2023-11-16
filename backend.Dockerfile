@@ -6,9 +6,13 @@ COPY ./scripts/serverside /var/www/html/
 # PHP extensions
 RUN apt-get update
 
-# Install MySQL Client and PDO for MySQL
-RUN apt-get install -y default-mysql-client \
-    && docker-php-ext-install pdo pdo_mysql
+RUN rm /etc/apt/preferences.d/no-debian-php && \
+    apt-get -y update && \
+    apt-get -y upgrade && \
+    apt-get install -y ffmpeg libxml2-dev php-soap
+
+RUN docker-php-ext-install mysqli pdo pdo_mysql soap && \
+    docker-php-ext-enable soap
 
 # Enable Rewrite Module
 RUN a2enmod rewrite
