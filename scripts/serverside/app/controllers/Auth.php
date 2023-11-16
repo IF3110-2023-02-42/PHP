@@ -9,7 +9,7 @@ class Auth extends Controller
         require_once __DIR__ . '/../applications/response.php';
         require_once __DIR__ . '/../constants/response.php';
     }
-    public function logiin()
+    public function login()
     {
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             if (isset($_SESSION["user"])) {
