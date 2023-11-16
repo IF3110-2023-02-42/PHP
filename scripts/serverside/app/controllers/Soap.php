@@ -71,4 +71,28 @@ class Soap extends Controller
             json_response_fail(METHOD_NOT_ALLOWED);
         }
     }
+
+    public function checkstatus()
+    {
+        if ($_SERVER['REQUEST_METHOD'] == 'GET') {
+            if (!isset($_GET['ID_Pengguna'])) {
+                json_response_fail(WRONG_API_CALL);
+            } else {
+                $userData = $this->getModel("User")->getProfile($_GET['ID_Pengguna']);
+                if ($userData) {
+                    $response = $this->soapHandler->call(
+                        "getUserStatus",
+                        [
+                            $userData["ID_Pengguna"],
+                        ]
+                    );
+                    json_response_success($response["verificationStatus"]);
+                } else {
+                    json_response_fail(ACCOUNT_NOT_FOUND);
+                }
+            }
+        } else {
+            json_response_fail(METHOD_NOT_ALLOWED);
+        }
+    }
 }
