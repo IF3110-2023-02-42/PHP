@@ -95,4 +95,26 @@ class Soap extends Controller
             json_response_fail(METHOD_NOT_ALLOWED);
         }
     }
+
+    public function findBookmarkByID(){
+        if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+            $inputJSON = file_get_contents('php://input');
+            $input = json_decode($inputJSON, true);
+            if (!isset($input['ID_Pengguna'])){
+                json_response_fail(WRONG_API_CALL);
+            } else{
+                $response = $this->soapHandler->call(
+                    "findBookmarkByID", 
+                    [
+                        $input['ID_Pengguna'],
+                    ]
+                );
+                json_response_success($response);
+                return;
+                }
+        }
+         else {
+            json_response_fail(METHOD_NOT_ALLOWED);
+        }
+    }
 }

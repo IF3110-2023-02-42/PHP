@@ -7,7 +7,12 @@ main{
     color: #4D2C5E;
 }
 
-.bookmark{
+.bookmarkHolder{
+    display: flex;
+    flex-direction: column;
+}
+
+.bookmarkHolder .bookmark{
     height:5%;
     width: 95%;
     background-color: white;
@@ -15,7 +20,7 @@ main{
     padding: 1%;
     margin: 0% 0% 3%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
     color: #4D2C5E;
