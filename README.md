@@ -1,5 +1,6 @@
 <a name="readme-top"></a>
 <br />
+
 <div align="center">
   <a href="https://github.com/IF3110-2023-02-42/PHP">
   </a>
@@ -9,8 +10,6 @@
   <p align="center">
     Platform Online Course untuk Siswa SMA<br>
 </div>
-
-
 
 <!-- TABLE OF CONTENTS -->
 <details>
@@ -37,58 +36,53 @@
   </ol>
 </details>
 
-
-
 <!-- ABOUT THE PROJECT -->
+
 ## About The Project
 
-Studydojo 
+Studydojo
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 ### Built With
 
-* HTML
-* CSS
-* Javascript
-* PHP
+- HTML
+- CSS
+- Javascript
+- PHP
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 <!-- GETTING STARTED -->
+
 ## Getting Started
 
 Tanpa Berlama-lama inilah cara menjalankan web app
+
 ### Prerequisites
 
-* Docker
-    ```sh
-    https://www.docker.com/
-    ```
-* Git
-    ```sh
-    https://git-scm.com/downloads
-    ```
+- Docker
+  ```sh
+  https://www.docker.com/
+  ```
+- Git
+  ```sh
+  https://git-scm.com/downloads
+  ```
 
 ### Installation
 
-
-
 1. Clone Repo ini dengan menggunakan cmd pada directory yang diinginkan
-    ```sh
-    C:\Users\MerekLaptop> 
-    git clone https://github.com/IF3110-2023-02-42/PHP
-    ```
+   ```sh
+   C:\Users\MerekLaptop>
+   git clone https://github.com/IF3110-2023-02-42/PHP
+   ```
 2. Buka Directory tempat file di clone
    ```sh
    C:\Users\MerekLaptop> cd tugas-besar-1
    C:\Users\MerekLaptop\tugas-besar-11>
    ```
-3. Jalankan docker 
+3. Jalankan docker
    ```sh
    C:\Users\MerekLaptop\tugas-besar-1>
    docker-compose up -d
@@ -97,84 +91,66 @@ Tanpa Berlama-lama inilah cara menjalankan web app
 5. StudyDojo siap untuk dipakai
 
 <!-- USAGE EXAMPLES -->
+
 ## Usage
 
 1. Home
-<img src="assets/home.jpg" alt="Home page">
+   <img src="assets/home.jpg" alt="Home page">
 
 2. Course Admin
-<img src="assets/course_admin.jpg" alt="Course admin">
+   <img src="assets/course_admin.jpg" alt="Course admin">
 
-4. Module Admin
-<img src="assets/module_admin.jpg" alt="Module admin">
+3. Module Admin
+   <img src="assets/module_admin.jpg" alt="Module admin">
 
-5. Material Admin
-<img src="assets/material_admin.jpg" alt="Material admin">
+4. Material Admin
+   <img src="assets/material_admin.jpg" alt="Material admin">
 
-6. Exercise Admin
-<img src="assets/exercise_admin.jpg" alt="Exercise admin">
+5. Exercise Admin
+   <img src="assets/exercise_admin.jpg" alt="Exercise admin">
 
-7. Study History
-<img src="assets/study_history.jpg" alt="Study history">
+6. Study History
+   <img src="assets/study_history.jpg" alt="Study history">
 
-8. Course
-<img src="assets/course.jpg" alt="Course">
+7. Course
+   <img src="assets/course.jpg" alt="Course">
 
-9. Module
-<img src="assets/module.jpg" alt="Module">
+8. Module
+   <img src="assets/module.jpg" alt="Module">
 
-10. Material
-<img src="assets/material.jpg" alt="Material">
+9. Material
+   <img src="assets/material.jpg" alt="Material">
 
-14. Profile
-<img width="941" alt="Profile" src="https://github.com/IF3110-2023-02-42/PHP/assets/89376200/c9fb176e-7078-4d3d-8523-3ee141f41031">
+10. Profile
+    <img width="941" alt="Profile" src="https://github.com/IF3110-2023-02-42/PHP/assets/89376200/c9fb176e-7078-4d3d-8523-3ee141f41031">
 
-15. About Us
-<img src="assets/about_us.jpg" alt="About us">
-
+11. About Us
+    <img src="assets/about_us.jpg" alt="About us">
 
 <!-- CONTRIBUTING -->
+
 ## Contributions
-* Client-side (html,css,js)
 
-|feature|13521051|13521066|13521106|
-|-------|--------|--------|--------|
-|register||:heavy_check_mark:|:heavy_check_mark:|
-|login||:heavy_check_mark:|:heavy_check_mark:|
-|home|||:heavy_check_mark:|
-|course|:heavy_check_mark:||:heavy_check_mark:|
-|course_admin|:heavy_check_mark:|:heavy_check_mark:|||
-|exercise|:heavy_check_mark:|:heavy_check_mark:||
-|exercise_admin|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|
-|courses|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|
-|exercises|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|
-|material|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|
-|material_view|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|
-|material_admin|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|
-
-* Server-side(php)
-
-|feature|13521051|13521066|13521106|
-|-------|--------|--------|--------|
-|Docker||:heavy_check_mark:|:heavy_check_mark:|
-|Routing|||:heavy_check_mark:|
-|DB|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|
-
-* both
-
-|feature|13521051|13521066|13521106|
-|-------|--------|--------|--------|
-|AJAX|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|
+- Front-end Tambahan
+  - Fitur request verifikasi : 13521106
+  - Fitur buka halaman premium : 13521106
+  - Fitur halaman bookmark material : 13521051
+  - Fitur redirect material to exercise : 13521051
+- Back-end Tambahan
+  - Fitur request verifikasi : 13521106
+  - Fitur menunjukkan status verifikasi : 13521106
+  - Fitur tambah bookmark : 13521051
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
 <!-- CONTACT -->
+
 ## Contact
-|Name|Contact|Github|
-|----|-------|------|
-|Manuella Ivana Uli Sianipar | 13521051@std.stei.itb.ac.id| <a href="https://www.github.com/manuellaiv">@manuellaiv</a>|
-|Muhammad Fadhil Amri | 13521066@std.stei.itb.ac.id |<a href="https://www.github.com/Mehmed13">@Mehmed13</a>|
-|Mohammad Farhan Fahrezy | 13521106@std.stei.itb.ac.id|<a href="https://www.github.com/farhanfahreezy">@farhanfahreezy</a>|
+
+| Name                        | Contact                     | Github                                                              |
+| --------------------------- | --------------------------- | ------------------------------------------------------------------- |
+| Manuella Ivana Uli Sianipar | 13521051@std.stei.itb.ac.id | <a href="https://www.github.com/manuellaiv">@manuellaiv</a>         |
+| Muhammad Fadhil Amri        | 13521066@std.stei.itb.ac.id | <a href="https://www.github.com/Mehmed13">@Mehmed13</a>             |
+| Mohammad Farhan Fahrezy     | 13521106@std.stei.itb.ac.id | <a href="https://www.github.com/farhanfahreezy">@farhanfahreezy</a> |
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
