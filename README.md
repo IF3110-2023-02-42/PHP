@@ -1,7 +1,7 @@
 <a name="readme-top"></a>
 <br />
 <div align="center">
-  <a href="https://github.com/Mehmed13/tugas-besar-1">
+  <a href="https://github.com/IF3110-2023-02-42/PHP">
   </a>
 
   <h3 align="center">StudyDojo</h3>
@@ -81,7 +81,7 @@ Tanpa Berlama-lama inilah cara menjalankan web app
 1. Clone Repo ini dengan menggunakan cmd pada directory yang diinginkan
     ```sh
     C:\Users\MerekLaptop> 
-    git clone https://github.com/Mehmed13/tugas-besar-1
+    git clone https://github.com/IF3110-2023-02-42/PHP
     ```
 2. Buka Directory tempat file di clone
    ```sh
@@ -103,40 +103,34 @@ Tanpa Berlama-lama inilah cara menjalankan web app
 <img src="assets/home.jpg" alt="Home page">
 
 2. Course Admin
-<img src="assets/course_admin.jpg" alt="Course page">
+<img src="assets/course_admin.jpg" alt="Course admin">
 
 4. Module Admin
-<img src="assets/module_admin.jpg" alt="Course page">
+<img src="assets/module_admin.jpg" alt="Module admin">
 
 5. Material Admin
-<img src="assets/material_admin.jpg" alt="Course page">
+<img src="assets/material_admin.jpg" alt="Material admin">
 
 6. Exercise Admin
-<img src="assets/exercise_admin.jpg" alt="Course page">
+<img src="assets/exercise_admin.jpg" alt="Exercise admin">
 
 7. Study History
-<img src="assets/study_history.jpg" alt="Course page">
+<img src="assets/study_history.jpg" alt="Study history">
 
 8. Course
-<img src="assets/course.jpg" alt="Course page">
+<img src="assets/course.jpg" alt="Course">
 
 9. Module
-<img src="assets/module.jpg" alt="Course page">
+<img src="assets/module.jpg" alt="Module">
 
 10. Material
-<img src="assets/material.jpg" alt="Course page">
+<img src="assets/material.jpg" alt="Material">
 
-11. Exercises
-<img src="assets/exercises.jpg" alt="Course page">
+14. Profile
+<img width="941" alt="Profile" src="https://github.com/IF3110-2023-02-42/PHP/assets/89376200/c9fb176e-7078-4d3d-8523-3ee141f41031">
 
-12. Exercise 
-<img src="assets/exercise.jpg" alt="Course page">
-
-13. Profile
-<img src="assets/profile.jpg" alt="Course page">
-
-14. About Us
-<img src="assets/about_us.jpg" alt="Course page">
+15. About Us
+<img src="assets/about_us.jpg" alt="About us">
 
 
 <!-- CONTRIBUTING -->
